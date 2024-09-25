@@ -11,7 +11,7 @@ resource "aws_lightsail_instance" "server" {
 
   tags = {
     name = "server"
-    env  = "test "
+    env  = "dev "
   }
 }
 
