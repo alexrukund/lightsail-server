@@ -11,19 +11,19 @@ pipeline{
                 sh "terraform validate"
             }
         }
-            tage("terraform fmt"){
+            stage("terraform fmt"){
             steps {
                 sh "terraform fmt"
             }
         }
          
-        tage("terraform validate"){
+        stage("terraform validate"){
             steps {
                 sh "terraform validate"
             }
         }
             
-        tage("terraform plan"){
+        stage("terraform plan"){
             steps {
                 sh "terraform plan"
             }
